@@ -1,2 +1,2 @@
-# payment-app
-Payment app with Next + TS + Mantine
+# Quiz App
+Payment app with Next + TS
