@@ -1,8 +1,6 @@
 import React from "react";
 
 interface IAnswers {
-  correctAnswer?: string;
-  incorrectAnswers?: string[];
   onClick: (event: React.MouseEvent<HTMLInputElement>) => void;
   allAnswers: string[];
 }
@@ -21,7 +19,6 @@ function Answers({ allAnswers, onClick }: IAnswers) {
         borderBottomLeftRadius: 30,
       }}
     >
-
       {allAnswers.map((incorrect: string) => (
         <input
           type="submit"
@@ -29,8 +26,8 @@ function Answers({ allAnswers, onClick }: IAnswers) {
           onClick={onClick}
           value={incorrect}
           style={{
-            background: "black",
-            color: "white",
+            color: 'white',
+            backgroundColor: 'black',
             borderRadius: 10,
             padding: "5px 10px",
             cursor: "pointer",
